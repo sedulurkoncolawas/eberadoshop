@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <meta property="og:image" content="https://i.ibb.co/hB3WqYj/IMG-20240425-WA0194.jpg">
+            <link rel="shortcut icon" href="https://i.ibb.co/hB3WqYj/IMG-20240425-WA0194.jpg" type="image/x-icon" />
+    <title>Eberardos - Shop</title>
+<style>
+        /* CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Warna skyblue */
+            color: #333; /* Warna teks */
+            line-height: 1.6;
+        }
+        
+        .shop {
+          margin-right: 4px;
+          font-size: 40px;
+          position: relative;
+          top: 10px;
+        }
+        .about {
+          margin-right: 4px;
+          font-size: 22px;
+          position: relative;
+          top: 5px;
+        }
+        
+        header {
+            background: crimson;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin-top: 10px; /* Margin atas untuk navigasi */
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transisi halus untuk perubahan warna */
+        }
+        
+        nav ul li a:hover {
+            color: #f0f8ff; /* Warna teks saat hover */
+        }
+        
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Konten utama ditengah */
+        }
+        
+        .product {
+            background-color: #fff; /* Warna background putih */
+            padding: 20px;
+            margin: 0 10px 20px; /* Margin untuk jarak antara produk */
+            border-radius: 10px; /* Sudut bulat */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Transisi halus saat hover */
+            width: calc(33.333% - 20px); /* Membuat 3 kolom */
+            position: relative; /* Menetapkan posisi relatif untuk konten produk */
+        }
+        
+        .product:hover {
+            transform: scale(1.05); /* Memperbesar saat hover */
+        }
+        
+        .product h1 {
+            font-size: 1.5em; /* Ukuran teks nama produk */
+            margin-bottom: 10px;
+            color: #333; /* Warna teks */
+        }
+        
+        .product p {
+            font-size: 1.2em; /* Ukuran teks harga */
+            color: crimson; /* Warna teks merah */
+            font-weight: bold;
+            transform: rotate(-15deg); /* Miringkan harga */
+            position: absolute; /* Posisi absolut untuk harga */
+            top: 10px; /* Jarak dari atas */
+            left: 130px; /* Jarak dari kiri */
+            padding: 5px 10px;
+            background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang transparan */
+            border-radius: 5px; /* Sudut bulat */
+            border: 1px solid crimson;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+        }
+        
+        .product button {
+            background-color: crimson; /* Warna biru langit */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transisi halus saat hover */
+        }
+        
+        .product button:hover {
+            background-color: red; /* Warna biru tua saat hover */
+        }
+        
+        footer {
+            background-color: crimson; /* Warna biru langit */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Eberardos Shop <span class="material-symbols-outlined shop">
+shopping_cart
+</span></h1>
+        <nav>
+            <ul>
+<li><a href="https://eberardoslogin.vercel.app/">                <span class="material-symbols-outlined about">
+info
+</span>About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Daftar produk DZ -->
+        <section id="products">
+            <article class="product">
+                <h1>Salma</h1>
+<button onclick="confirmPurchase('https://ruangbokep.one/')">Buy</button>
+                <p class="product-price">Rp0.00</p> <!-- Harga barang -->
+            </article>
+            <article class="product">
+                <h1>Sugiarto</h1>
+<button onclick="confirmPurchase('https://www.pornhub.com/video/search?search=japanese+porn')">Buy</button>
+                <p class="product-price">Rp10.000</p> <!-- Harga barang -->
+            </article>
+            <article class="product">
+                <h1>Prapti</h1>
+<button onclick="confirmPurchase('https://159.223.38.69/')">Buy</button>
+                <p class="product-price">Rp5.000</p> <!-- Harga barang -->
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy Eberardos Negro</p>
+    </footer>
+    <script>
+    function confirmPurchase(purchaseUrl) {
+    if (confirm("Apakah lu beneran mau beli?😹🤨")) {
+        window.location.href = purchaseUrl;
+    }
+}
+</script>
+</body>
+</html>
